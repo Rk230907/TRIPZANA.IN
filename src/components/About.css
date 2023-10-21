@@ -1,0 +1,107 @@
+/* Styles for the About page container */
+.about {
+  text-align: center;
+  padding: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Styles for headings */
+.about h2 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+/* Styles for paragraphs */
+.about p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+/* Styles for the "About Us" section */
+.about-us {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for customer ratings section */
+.customer-ratings {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Styles for individual customer ratings (cue cards) */
+.cue-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  max-width: 400px;
+  width: 100%;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for reviewer name in customer ratings */
+.cue-card-reviewer {
+  text-align: right;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.review {
+  text-align: center;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  max-width: 100%;
+}
+
+/* Responsive design for screens smaller than 768px */
+@media (max-width: 768px) {
+  /* Adjust the max-width for the About container */
+  .about {
+    max-width: 100%;
+    padding: 0.5rem;
+  }
+
+  /* Adjust the font size for headings and paragraphs */
+  .about h2 {
+    font-size: 1.5rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Adjust the max-width for the customer ratings section */
+  .customer-ratings {
+    max-width: 100%;
+  }
+
+  /* Adjust the max-width and padding for individual customer ratings (cue cards) */
+  .cue-card {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  /* Adjust the font size for reviewer names */
+  .cue-card-reviewer {
+    font-size: 0.9rem;
+  }
+
+  /* Adjust the max-width for the review section */
+  .review {
+    max-width: 100%;
+  }
+}

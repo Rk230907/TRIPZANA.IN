@@ -1,0 +1,240 @@
+/* DestinationDetail Styles */
+.destination-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+  padding: 1rem;
+  background: linear-gradient(to bottom, #2c3e50, #34495e);
+  color: #ecf0f1;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-top: 94px;
+}
+
+.destination-image img {
+  max-width: 600px;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+/* No animations for hover */
+.destination-image img:hover {
+  transform: scale(1.05);
+}
+
+/* No animations for these sections */
+.destination-itinerary,
+.destination-travel-details {
+  width: 100%;
+  padding: 1rem;
+  background: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: #333;
+}
+
+.destination-itinerary h3,
+.destination-travel-details h3 {
+  font-size: 1.4rem;
+  margin: 0;
+  text-align: center;
+  color: #e67e22;
+}
+
+.destination-itinerary p,
+.destination-travel-details p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  opacity: 1; /* No animations, so set opacity to 1 */
+}
+
+/* Left side with Horizontal Roadmap */
+.destination-roadmap-container {
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin-top: 2rem;
+}
+
+.destination-roadmap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.destination-roadmap h3 {
+  font-size: 1.4rem;
+  margin: 0;
+  text-align: center;
+  color: #e67e22;
+  margin-top: 10px;
+}
+
+.destination-roadmap ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.destination-roadmap ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.stop {
+  width: 30px;
+  height: 30px;
+  background: #3498db;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 20px;
+}
+
+.plane-icon {
+  font-size: 1.5rem;
+  color: #3498db;
+  transform: rotate(90deg); /* Rotate the plane icon */
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.step-info h4 {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #2980b9;
+}
+
+.step-info p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Right side with Itinerary and Travel Details */
+.destination-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 600px;
+  margin-top: 2rem;
+  margin-left: 20px;
+}
+
+/* DestinationPage.css */
+.headerState {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff; /* Text color */
+  padding: 10px;
+  border: 2px solid #2c3e50; /* Dark border color */
+  background-color: #34495e; /* Dark background color */
+  border-radius: 5px; /* Rounded corners */
+  margin-bottom: 10px;
+}
+
+.stateDesc {
+  font-size: 16px;
+  color: #ecf0f1; /* Text color */
+  padding: 15px;
+  border: 2px solid #3498db; /* Blue border color */
+  background-color: #2980b9; /* Blue background color */
+  border-radius: 5px; /* Rounded corners */
+  margin-bottom: 20px;
+}
+
+@media (max-width: 720px) {
+  .destination-image img {
+    max-width: 250px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    margin-left: 28px;
+  }
+
+  .destination-itinerary,
+  .destination-travel-details {
+    width: 100%;
+    padding: 1rem;
+    background: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #333;
+  }
+
+  .destination-itinerary h3,
+  .destination-travel-details h3 {
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+    color: #e67e22;
+  }
+
+  .destination-itinerary p,
+  .destination-travel-details p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    opacity: 1; /* No animations, so set opacity to 1 */
+  }
+
+  .destination-roadmap h3 {
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+    color: #e67e22;
+    margin-top: 10px;
+  }
+
+  .destination-roadmap ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .plane-icon {
+    font-size: 1rem;
+    color: #3498db;
+    transform: rotate(90deg); /* Rotate the plane icon */
+    margin-left: 0;
+    margin-right: 20px;
+  }
+
+  .step-info h4 {
+    font-size: 1rem;
+    margin: 0;
+    color: #2980b9;
+  }
+
+  .step-info p {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  /* DestinationPage.css */
+  .headerState {
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff; /* Text color */
+    padding: 10px;
+    border: 2px solid #2c3e50; /* Dark border color */
+    background-color: #34495e; /* Dark background color */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 10px;
+  }
+
+  .stateDesc {
+    font-size: 10px;
+    color: #ecf0f1; /* Text color */
+    padding: 15px;
+    border: 2px solid #3498db; /* Blue border color */
+    background-color: #2980b9; /* Blue background color */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 20px;
+  }
+}

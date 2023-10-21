@@ -1,0 +1,109 @@
+/* Styles for the destination list container */
+.destination-list {
+  text-align: center;
+  padding: 0rem;
+  margin: -8px;
+}
+
+/* Styles for the horizontal image slider container */
+.image-slider-container {
+  width: 100%;
+  height: 400px; /* Default height for small screens */
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  .image-slider-container {
+    height: 600px; /* Adjusted height for larger screens */
+  }
+}
+
+/* Styles for the horizontal image slider */
+.image-slider {
+  display: flex;
+  transition: transform 1s ease; /* Scroll transition effect */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+/* Style for individual slider images */
+.image-slider img {
+  width: auto;
+  height: 100%;
+  max-width: 100%; /* Ensure images fit within the container */
+}
+
+/* Active and inactive styles for slider images */
+.image-slider img.active {
+  transition: transform 1s ease; /* Scroll transition effect */
+  transform: translateX(0); /* Move the active image to the left */
+}
+
+.image-slider img.inactive {
+  transition: transform 1s ease; /* Scroll transition effect */
+  transform: translateX(100%); /* Move inactive images to the right */
+}
+
+/* Styles for the destination cards */
+.destination-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.destination-card {
+  width: 100%; /* Adjusted width for smaller screens */
+  max-width: 450px; /* Maximum width for larger screens */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  .destination-card {
+    width: 45%; /* Adjusted width for larger screens */
+  }
+}
+
+.destination-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.destination-card img {
+  width: 100%;
+  height: auto;
+  max-width: 100%; /* Ensure images fit within the card */
+  border-radius: 10px;
+}
+
+.destination-card h2 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.destination-card p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.destination-card a {
+  text-decoration: none;
+  background-color: #007bff;
+  color: #fff;
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
