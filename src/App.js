@@ -7,20 +7,22 @@ import Footer from "./components/Footer";
 import DestinationPage from "./components/DestinationPage";
 import About from "./components/About";
 import TouristPlaceDetails from "./components/TouristPlaceDetails";
+import ChatBotComponent from "./components/ChatBotComponent";
 
 function App() {
   return (
-    <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<DestinationList />} />
-        <Route path="/destination/:id" element={<DestinationDetail />} />
-        <Route path="/destinations" element={<DestinationPage />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/details/:id" element={<TouristPlaceDetails />} />
-      </Routes>
-      <Footer />
-    </Router>
+    <ChatBotComponent />
+    // <Router>
+    //   <Header />
+    //   <Routes>
+    //     <Route path="/" element={<DestinationList />} />
+    //     <Route path="/destination/:id" element={<DestinationDetail />} />
+    //     <Route path="/destinations" element={<DestinationPage />} />
+    //     <Route path="/about" element={<About />} />
+    //     <Route path="/details/:id" element={<TouristPlaceDetails />} />
+    //   </Routes>
+    //   <Footer />
+    // </Router>
   );
 }
 
